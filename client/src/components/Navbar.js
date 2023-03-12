@@ -70,7 +70,7 @@ export default function NavbarComponent(props) {
 
                     <Navbar.Collapse>
                     <Navbar.Link
-                            href="/about"
+                            href="/Landingpage"
                             className="text-black font-bold">
                             Home
                             </Navbar.Link>
