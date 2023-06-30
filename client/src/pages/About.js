@@ -15,10 +15,10 @@ export default function About() {
     return (
         <>
             <div className="h-full relative w-full color.blue bg-East bay w-[80%] m-auto" >
-                <div className={`w-[75%] m-auto`} data-aos="flip-left"  data-aos-delay="100">
+                <div className={`w-[75%] m-auto`} data-aos="flip-up"  data-aos-delay="100">
                         <Instruction></Instruction>
                 </div>
-                <div id="feedback" className="w-[85%] m-auto "  data-aos="flip-left"  data-aos-delay="1000">
+                <div id="feedback" className="w-[85%] m-auto "  data-aos="fade-up"  data-aos-delay="100">
                     <Doubtcomponent></Doubtcomponent>
                 </div>
             </div>

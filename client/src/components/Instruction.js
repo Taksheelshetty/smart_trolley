@@ -1,16 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
-import { DarkThemeToggle, Flowbite, figcaption } from 'flowbite-react';
+import { DarkThemeToggle, Flowbite, figcaption, Timeline, Button, Card } from 'flowbite-react';
 import Aos from "aos";
 import 'aos/dist/aos.css'
 
 export default function Instructioncomponent() {
-    useEffect(()=>{
+    useEffect(() => {
         Aos.init();
     }, [],)
     return (
         <>
-            <div>
+            {/* <div>
                 <p class="text-3xl">Follow the Instruction </p>
             </div>
             <div class="grid mb-8 border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 md:mb-13 md:grid-cols-2">
@@ -66,8 +66,196 @@ export default function Instructioncomponent() {
                         </div>
                     </figcaption>
                 </figure>
-            </div>
+            </div> */}
+            {/* <div className="grid grid-rows-2 grid-cols-1 gap-4 my-4 col-span-4 sm:max-w-sm" >
+                <div>
 
+                    <Timeline horizontal={true}>
+                        <Timeline.Item>
+                            <Timeline.Point />
+                            <Timeline.Content>
+                                <Timeline.Time>
+
+                                </Timeline.Time>
+                                <Timeline.Title>
+                                    STEP1
+                                </Timeline.Title>
+                                <Timeline.Body>
+                                    <div className="min-w-max sm:max-w-screen-sm">
+                                        <Card
+                                            horizontal={true}
+                                            imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg">
+                                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Scan the QR code
+                                            </h5>
+                                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                                                Scan the unique id present on the cart
+                                            </p>
+                                        </Card>
+                                    </div>
+                                </Timeline.Body>
+                                <Button color="gray">
+                                    Learn More
+
+                                </Button>
+                            </Timeline.Content>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <Timeline.Point />
+                            <Timeline.Content>
+                                <Timeline.Time>
+
+                                </Timeline.Time>
+                                <Timeline.Title>
+                                    STEP 2
+                                </Timeline.Title>
+                                <Timeline.Body>
+                                    <div className="min-w-max">
+                                        <Card
+                                            horizontal={true}
+                                            imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg">
+                                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Enter Cerdensials
+                                            </h5>
+                                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                                                Scan the unique id present on the cart
+                                            </p>
+                                        </Card>
+                                    </div>
+                                </Timeline.Body>
+                                <Button color="gray">
+                                    Learn More
+
+                                </Button>
+                            </Timeline.Content>
+                        </Timeline.Item>
+
+                    </Timeline>
+                </div>
+                <div>
+
+                    <Timeline horizontal={true}>
+                        <Timeline.Item>
+                            <Timeline.Point />
+                            <Timeline.Content>
+                                <Timeline.Time>
+
+                                </Timeline.Time>
+                                <Timeline.Title>
+                                    STEP 3
+                                </Timeline.Title>
+                                <Timeline.Body>
+                                    <div className="min-w-max">
+                                        <Card
+                                            horizontal={true}
+                                            imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg">
+                                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Start shopping
+                                            </h5>
+                                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                                                Scan the unique id present on the cart
+                                            </p>
+                                        </Card>
+                                    </div>
+                                </Timeline.Body>
+                                <Button color="gray">
+                                    Learn More
+
+                                </Button>
+                            </Timeline.Content>
+                        </Timeline.Item>
+                        <Timeline.Item>
+                            <Timeline.Point />
+                            <Timeline.Content>
+                                <Timeline.Time>
+
+                                </Timeline.Time>
+                                <Timeline.Title>
+                                    STEP 4
+                                </Timeline.Title>
+                                <Timeline.Body>
+                                    <div className="min-w-max">
+                                        <Card
+                                            horizontal={true}
+                                            imgSrc="https://flowbite.com/docs/images/blog/image-1.jpg">
+                                            <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                                Exit the cart
+                                            </h5>
+                                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                                                By clicking on Checkout botton on the page
+                                            </p>
+                                        </Card>
+                                    </div>
+                                </Timeline.Body>
+                                <Button color="gray">
+                                    Learn More
+
+                                </Button>
+                            </Timeline.Content>
+                        </Timeline.Item>
+
+                    </Timeline>
+                </div>
+            </div > */}
+            <div>
+                <p class="text-3xl">Follow the Instruction </p>
+            </div>
+            <div className="grid grid-rows-2 sm:grid-cols-2 grid-cols-1 gap-2 my-4 col-span-4  ">
+                <div className="w-full sm:max-w-lg group block  mx-auto rounded-lg sm:p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <Card
+                        horizontal={false}
+                        imgSrc="./Images/qr-code-scanning-vector-illustration-600w-1303670605.webp">
+                        <h4 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STEP1</h4>
+                        <h5 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Scan the QR code
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-400">
+                            Scan the unique id present on the cart
+                        </p>
+                    </Card>
+                </div>
+                <div className="w-full sm:max-w-lg group block  mx-auto rounded-lg sm:p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <div data-aos="flip" data-aos-delay="100" >
+                        <Card
+                            horizontal={false}
+                            imgSrc="./Images/password.png">
+                            <h4 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STEP2</h4>
+                            <h5 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                                Enter Cerdensials
+                            </h5>
+                            <p className="font-normal text-gray-700 dark:text-gray-400">
+                                Scan the unique id present on the cart
+                            </p>
+                        </Card>
+                    </div>
+                </div>
+                <div className="w-full sm:max-w-lg group block  mx-auto rounded-lg sm:p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 hover:bg-sky-500 hover:ring-sky-500">
+                    <Card
+                        horizontal={false}
+                        imgSrc="./Images/password.png">
+                        <h4 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STEP3</h4>
+                        <h5 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Start shopping
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-400">
+                            Scan the unique id present on the cart
+                        </p>
+                    </Card>
+                </div>
+                <div className="w-full sm:max-w-lg group block  mx-auto rounded-lg sm:p-2 bg-white ring-1 ring-slate-900/5 shadow-lg space-y-3 dark:hover:bg-sky-500 dark:hover:ring-sky-500">
+                    <Card
+                        horizontal={false}
+                        imgSrc="./Images/password.png">
+                        <h4 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">STEP4</h4>
+                        <h5 className="text-sm sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                            Exit the cart
+                        </h5>
+                        <p className="font-normal text-gray-700 dark:text-gray-400">
+                            By clicking on Checkout botton on the page
+                        </p>
+                    </Card>
+                </div>
+            </div >
 
         </>
 

@@ -16,6 +16,7 @@ import axiosInstance from 'axios';
 import 'flowbite/dist/flowbite'
 import Newregistrationcomponent from './components/Newregister';
 
+
 const axios = axiosInstance.create({ withCredentials: true })
 
 function App() {

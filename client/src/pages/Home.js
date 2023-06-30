@@ -12,6 +12,7 @@ import 'aos/dist/aos.css'
 
 
 
+
 export default function Home() {
     useEffect(() => {
         Aos.init();
@@ -27,12 +28,9 @@ export default function Home() {
                         <CarouselComponent></CarouselComponent>
                     </div>
                     <div className="text-4xl align-center text-center m-10 p-8" data-aos="fade-up" data-aos-delay="100">
-                        <Tooltip
-                            content="Select any categories"
-                            placement="top"
-                        >
-                            <h1 className="text center focus:outline-none focus:ring focus:ring-violet-300 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:">Shop top categories</h1>
-                        </Tooltip>
+
+                        <h1 className="text center focus:outline-none focus:ring focus:ring-violet-300 rounded-t-lg md:rounded-t-none md:rounded-tl-lg md:">Shop top categories</h1>
+
                     </div>
                     <div data-aos="fade-up" data-aos-delay="100">
                         <Carscommponent></Carscommponent>
@@ -40,7 +38,7 @@ export default function Home() {
                     </div>
 
 
-                    <div className="overflow-x-scroll flex space-x-4 " data-aos="flip-left" data-aos-delay="10" >
+                    <div className="overflow-x-scroll flex space-x-4 " data-aos="fade-up" data-aos-delay="10" >
                         <CardComponent></CardComponent>
                         <CardComponent></CardComponent>
                         <CardComponent></CardComponent>
